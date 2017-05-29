@@ -21,6 +21,9 @@
     "field"
   ],
   "main": "index.js",
+  "engines": {
+    "node": ">= 7.0.0"
+  },
   "scripts": {
     "test": "mocha",
     "coverage": "istanbul cover _mocha",
