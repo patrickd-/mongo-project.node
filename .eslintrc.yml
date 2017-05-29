@@ -1,0 +1,61 @@
+env:
+  node: true
+  es6: true
+  mocha: true
+extends:
+  - eslint:recommended
+  - airbnb-base
+parserOptions:
+  sourceType: module
+rules:
+  # Enforcing methods to be static is annoying in business logic heavy classes.
+  class-methods-use-this:
+    - off
+  # Sometimes you just have to `await` for things in a loop and cant do it async.
+  no-await-in-loop:
+    - warn
+  # We are using mongodb, having some underscore cannot be prevented.
+  no-underscore-dangle:
+    - off
+  # It's a good practice but not an error.
+  no-param-reassign:
+    - warn
+  # We like parentheses for readability.
+  arrow-parens:
+    - error
+    - always
+  arrow-body-style:
+    - error
+    - always
+  # We like loops.
+  no-restricted-syntax:
+    - off
+    - ForOfStatement
+  # We don't like the inline } else { style.
+  brace-style:
+    - warn
+    - stroustrup
+  # Just pad your blocks with newlines as you see fit.
+  padded-blocks:
+    - off
+  # Max line length for code: 120
+  # Max line length for comments: 80
+  # Lines with long strings or URLs can be longer.
+  max-len:
+    - error
+    - 120
+    - 2
+    - comments: 80
+      ignoreUrls: true
+      ignoreComments: false
+      ignoreRegExpLiterals: true
+      ignoreStrings: true
+      ignoreTemplateLiterals: true
+  # We want dangling commas but not on functions
+  comma-dangle:
+    - error
+    - functions: never
+      arrays: always-multiline
+      objects: always-multiline
+      imports: always-multiline
+      exports: always-multiline

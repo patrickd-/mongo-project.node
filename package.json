@@ -1,0 +1,40 @@
+{
+  "name": "mongo-project",
+  "version": "1.0.0",
+  "description": "Simplified Mongo DB style projection for hiding/showing specific fields.",
+  "homepage": "https://github.com/patrickd-/mongo-project.node/",
+  "license": "MIT",
+  "author": "patrick.d@ventral.org",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:patrickd-/mongo-project.node.git"
+  },
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "project",
+    "projection",
+    "object",
+    "hide",
+    "mask",
+    "map",
+    "field"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha",
+    "travis": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.13.0",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "istanbul-harmony": "^0.3.16",
+    "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.3.0"
+  }
+}
