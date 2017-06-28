@@ -1,6 +1,6 @@
 {
   "name": "mongo-project",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simplified Mongo DB style projection for hiding/showing specific fields.",
   "homepage": "https://github.com/patrickd-/mongo-project.node/",
   "license": "MIT",

@@ -126,7 +126,7 @@ describe('project()', () => {
     const recob = {};
     recob.rec = recob;
     expect(project(recob, {
-      recob: 1,
+      rec: 1,
     })).to.deep.equal({
       rec: recob,
     });
@@ -139,6 +139,13 @@ describe('project()', () => {
     })).to.deep.equal({
       map: mapob.map,
     });
+  });
+
+  it('should not show fields that begin with the specified name', () => {
+    const mapob = { map: { flap: true } };
+    expect(project(mapob, {
+      mapper: 1,
+    })).to.deep.equal({});
   });
 
 });
