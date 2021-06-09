@@ -67,4 +67,4 @@ console.dir(projectedObject);
 
 ### $, $elemMatch, $slice, $meta
 
-The [operators of MongoDBs](https://docs.mongodb.com/manual/reference/method/db.collection.find/#projection) projection are not supported.
+These [operators of MongoDB's](https://docs.mongodb.com/manual/reference/method/db.collection.find/#projection) projection are not supported at the moment.
