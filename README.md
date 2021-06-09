@@ -1,6 +1,6 @@
 # mongo-project
 
-[![Build Status](https://travis-ci.org/patrickd-/mongo-project.node.svg?branch=master)](https://travis-ci.org/patrickd-/mongo-project.node) [![Coverage Status](https://coveralls.io/repos/github/patrickd-/mongo-project.node/badge.svg)](https://coveralls.io/github/patrickd-/mongo-project.node) [![Dependencies Status](https://david-dm.org/patrickd-/mongo-project.node.svg)](https://david-dm.org/patrickd-/mongo-project.node)
+[![Build Status](https://travis-ci.com/patrickd-/mongo-project.node.svg?branch=master)](https://travis-ci.com/patrickd-/mongo-project.node) [![Coverage Status](https://coveralls.io/repos/github/patrickd-/mongo-project.node/badge.svg)](https://coveralls.io/github/patrickd-/mongo-project.node) [![Dependencies Status](https://david-dm.org/patrickd-/mongo-project.node.svg)](https://david-dm.org/patrickd-/mongo-project.node)
 
 Simplified [MongoDB style projection](https://docs.mongodb.com/manual/reference/method/db.collection.find/#projection) for hiding/showing specific fields.
 
